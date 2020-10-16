@@ -1,11 +1,37 @@
 // Assignment Code
-//var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 //var characterSet="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ，．：；！？＂＇｀＾～￣＿＆＠＃％＋－＊＝＜＞（）［］｛｝｟｠｜￤／＼￢＄"
-//var pwLength = prompt("How many characters would you like in your password?")
+var pwLength = prompt("How many characters would you like in your password?")
 //var lowerCaseChar = confirm("would you like lower case letters?")
 //var upperCaseChar = confirm("would you like upper case letters?")
 //var numberCaseChar = confirm("would you like numbers?")
 //var specialCaseChar = confirm("would you like special characters?")
+
+//DOM elements
+const lengthEl = pwLength
+
+
+
+// object of functions
+const myFunc = {
+  lower: getLower,
+  upper: getUpper,
+  number: getNumber,
+  symbol: getSymbol
+};
+
+generateBtn.addEventListener('click', () =>{
+  const length = +lengthEl.value;
+  console.log(typeof length);
+
+})
+
+
+
+
+
+
+
 
 
 console.log("This is a test")
@@ -27,7 +53,7 @@ function getNumber(){
 
 }
 function getSymbol(){
-  const symbols = '，．：；！？＂＇｀＾～￣＿＆＠＃％＋－＊＝＜＞（）［］｛｝｟｠｜￤／＼￢＄'
+  const symbols = '，．：；！？＂＇｀＾～￣＿＆＠＃％＋－＊＝＜＞（）［］｛}｜￤／＼￢＄'
   return symbols[Math.floor(Math.random() * symbols.length)];
 
 
