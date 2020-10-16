@@ -16,13 +16,28 @@ function getLower(){
 
 }
 function getUpper(){
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 
 
 }
+
+function getNumber(){
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+
+
+}
+function getSymbol(){
+  const symbols = '，．：；！？＂＇｀＾～￣＿＆＠＃％＋－＊＝＜＞（）［］｛｝｟｠｜￤／＼￢＄'
+  return symbols[Math.floor(Math.random() * symbols.length)];
+
+
+}
+
+
 console.log(getLower());
 console.log(getUpper());
-
+console.log(getNumber());
+console.log(getSymbol());
 
 
 
