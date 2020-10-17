@@ -46,7 +46,7 @@ generateBtn.addEventListener("click", () =>{
   
   //define master string based confirmations
   let charSet = (lowerCharSet + upperCharSet + numberCharSet + specialCharSet)
- //define initial output to text area
+ //define initial output to text area and reset so pw doesn't compound
  let pw = "";
 // loop that runs the length of input value and then adds a character from master string
  for(var i = 0; i < pwLength; i ++){
