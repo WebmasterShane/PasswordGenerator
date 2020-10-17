@@ -13,6 +13,7 @@ if (pwLength < 8){
   pwLength = prompt("Your password needs atleast 8 characters. Enter again.")
 }
 
+
 //create event listener for when the button is clicked
 generateBtn.addEventListener("click", () =>{
 //define that when confirming charater types they are added to master string
